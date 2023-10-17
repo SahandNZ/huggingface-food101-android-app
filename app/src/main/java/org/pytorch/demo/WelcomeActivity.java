@@ -42,10 +42,6 @@ public class WelcomeActivity extends AppCompatActivity {
           R.string.welcome_page_image_classification_title,
           R.drawable.ic_image_classification_l,
           R.string.welcome_page_image_classification_description),
-      new PageData(
-          R.string.welcome_page_nlp_title,
-          R.drawable.ic_text_classification_l,
-          R.string.welcome_page_nlp_description)
   };
 
   @Override

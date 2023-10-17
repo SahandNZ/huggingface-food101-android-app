@@ -31,8 +31,8 @@ public class InfoViewFactory {
       TextView infoTextView = view.findViewById(R.id.info_title);
       TextView descriptionTextView = view.findViewById(R.id.info_description);
 
-      infoTextView.setText(R.string.vision_card_qmobilenet_title);
-      StringBuilder sb = new StringBuilder(context.getString(R.string.vision_card_qmobilenet_description));
+      infoTextView.setText(R.string.vision_card_food101_title);
+      StringBuilder sb = new StringBuilder(context.getString(R.string.vision_card_food101_description));
       if (additionalText != null) {
         sb.append('\n').append(additionalText);
       }
@@ -40,11 +40,7 @@ public class InfoViewFactory {
       return view;
     } else if (INFO_VIEW_TYPE_TEXT_CLASSIFICATION == infoViewType) {
       View view = inflater.inflate(R.layout.info, null, false);
-      TextView infoTextView = view.findViewById(R.id.info_title);
-      TextView descriptionTextView = view.findViewById(R.id.info_description);
 
-      infoTextView.setText(R.string.nlp_card_lstm_title);
-      descriptionTextView.setText(R.string.nlp_card_lstm_description);
       return view;
     }
     throw new IllegalArgumentException("Unknown info view type");
